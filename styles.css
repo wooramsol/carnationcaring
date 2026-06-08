@@ -65,9 +65,8 @@ a {
   position: sticky;
   top: 0;
   z-index: 200;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
+  background: var(--gradient-brand);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .site-header__inner {
@@ -84,6 +83,7 @@ a {
   font-weight: 700;
   font-size: 1.2rem;
   letter-spacing: -0.02em;
+  color: #fff;
 }
 
 .nav {
@@ -95,19 +95,19 @@ a {
   padding: 0.55rem 1.1rem;
   border-radius: 999px;
   font-size: 1rem;
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.85);
   transition: background 0.2s, color 0.2s;
 }
 
 .nav a:hover {
-  background: var(--bg);
-  color: var(--text);
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
 }
 
 .nav a.is-active {
-  background: var(--gradient-brand);
+  background: rgba(255, 255, 255, 0.22);
   color: #fff;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* ===== Buttons ===== */
@@ -175,6 +175,40 @@ a {
 .page-hero--brand {
   background: var(--gradient-brand);
   color: #fff;
+}
+
+.page-hero--photo {
+  position: relative;
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  padding: 4.5rem 0 3.5rem;
+}
+
+.page-hero--photo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.page-hero--photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(85, 38, 38, 0.82) 0%, rgba(107, 49, 49, 0.72) 100%);
+  z-index: 1;
+}
+
+.page-hero--photo .page-hero__inner {
+  position: relative;
+  z-index: 2;
+}
+
+.page-hero--scope::before {
+  background-image: url('assets/images/scope-hero.jpg');
 }
 
 .page-hero__inner {
@@ -435,9 +469,9 @@ a {
 }
 
 .service-item__link {
-  font-size: 0.8125rem;
+  font-size: 0.9375rem;
   font-weight: 600;
-  color: var(--primary-light);
+  color: #ffffff;
 }
 
 .service-item__link:hover {
@@ -685,13 +719,6 @@ a {
   background: var(--primary-soft);
   padding: 0.25rem 0.75rem;
   border-radius: 999px;
-}
-
-.review-card__stars {
-  color: #c9a227;
-  font-size: 1.125rem;
-  letter-spacing: 2px;
-  margin-bottom: 0.75rem;
 }
 
 .review-card__text {
