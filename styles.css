@@ -156,6 +156,11 @@ a {
   font-size: 0.875rem;
 }
 
+.btn--lg {
+  padding: 1.125rem 2.5rem;
+  font-size: 1.1875rem;
+}
+
 /* ===== Page Hero (shared) ===== */
 .page-hero {
   padding: 4rem 0 3.5rem;
@@ -218,6 +223,10 @@ a {
 
 .page-hero--scope::before {
   background-image: url('assets/images/scope-hero.jpg');
+}
+
+.page-hero--contact::before {
+  background-image: url('assets/images/contact-hero.jpg');
 }
 
 .page-hero__inner {
@@ -657,6 +666,11 @@ a {
 .contact-quick {
   text-align: center;
   margin-bottom: 2.5rem;
+}
+
+.contact-quick .btn {
+  min-width: 240px;
+  justify-content: center;
 }
 
 /* ===== Reviews ===== */
