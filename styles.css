@@ -177,6 +177,15 @@ a {
   color: #fff;
 }
 
+.page-hero--brand .page-hero__label,
+.page-hero--brand .page-hero__title,
+.page-hero--brand .page-hero__desc,
+.page-hero--photo .page-hero__label,
+.page-hero--photo .page-hero__title,
+.page-hero--photo .page-hero__desc {
+  color: #fff;
+}
+
 .page-hero--photo {
   position: relative;
   min-height: 380px;
@@ -298,30 +307,6 @@ a {
   object-fit: cover;
 }
 
-.home-hero__badge {
-  position: absolute;
-  bottom: -1.5rem;
-  left: -1.5rem;
-  background: var(--surface);
-  padding: 1.25rem 1.5rem;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-md);
-  max-width: 220px;
-}
-
-.home-hero__badge strong {
-  display: block;
-  font-size: 2rem;
-  color: var(--primary);
-  line-height: 1;
-  margin-bottom: 0.25rem;
-}
-
-.home-hero__badge span {
-  font-size: 0.9375rem;
-  color: var(--text-muted);
-}
-
 /* ===== Stats ===== */
 .stats {
   margin-top: 4rem;
@@ -399,10 +384,11 @@ a {
   font-size: 1.375rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  color: #fff;
 }
 
 .welcome__text {
-  opacity: 0.9;
+  color: rgba(255, 255, 255, 0.92);
   font-size: 1.0625rem;
   line-height: 1.85;
 }
@@ -459,11 +445,12 @@ a {
   font-size: 1.375rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  color: #fff;
 }
 
 .service-item__body p {
   font-size: 1rem;
-  opacity: 0.85;
+  color: rgba(255, 255, 255, 0.92);
   margin-bottom: 0.75rem;
   line-height: 1.6;
 }
@@ -487,18 +474,19 @@ a {
 }
 
 .scope-feature {
-  background: var(--surface);
+  background: var(--gradient-brand);
   border-radius: var(--radius);
   padding: 2rem 1.5rem;
   text-align: center;
-  border: 1px solid var(--border);
+  border: none;
+  box-shadow: var(--shadow-md);
 }
 
 .scope-feature p {
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
   font-weight: 600;
-  color: var(--primary-dark);
-  line-height: 1.7;
+  color: #fff;
+  line-height: 1.75;
 }
 
 .scope-cta {
@@ -780,11 +768,6 @@ a {
 
   .home-hero__image {
     aspect-ratio: 16/10;
-  }
-
-  .home-hero__badge {
-    bottom: 1rem;
-    left: 1rem;
   }
 
   .stats__grid {
