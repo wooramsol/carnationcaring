@@ -28,14 +28,14 @@
   --font: 'Noto Sans KR', system-ui, sans-serif;
   --max: 1120px;
   --header-h: 72px;
-  /* Pexels free stock photos (RDNE – Asian caregiver series) */
-  --img-hero: url('https://images.pexels.com/photos/7551651/pexels-photo-7551651.jpeg?auto=compress&cs=tinysrgb&w=1200');
-  --img-hospital: url('https://images.pexels.com/photos/7551646/pexels-photo-7551646.jpeg?auto=compress&cs=tinysrgb&w=900');
-  --img-dementia: url('https://images.pexels.com/photos/7551664/pexels-photo-7551664.jpeg?auto=compress&cs=tinysrgb&w=900');
-  --img-documents: url('https://images.pexels.com/photos/7551647/pexels-photo-7551647.jpeg?auto=compress&cs=tinysrgb&w=900');
-  --img-home: url('https://images.pexels.com/photos/7551643/pexels-photo-7551643.jpeg?auto=compress&cs=tinysrgb&w=900');
-  --img-scope-hero: url('https://images.pexels.com/photos/7551639/pexels-photo-7551639.jpeg?auto=compress&cs=tinysrgb&w=1600');
-  --img-contact-hero: url('https://images.pexels.com/photos/7551640/pexels-photo-7551640.jpeg?auto=compress&cs=tinysrgb&w=1600');
+  /* Pexels free stock photos – East Asian elderly & family care */
+  --img-hero: url('https://images.pexels.com/photos/5637742/pexels-photo-5637742.jpeg?auto=compress&cs=tinysrgb&w=1200');
+  --img-hospital: url('https://images.pexels.com/photos/6798592/pexels-photo-6798592.jpeg?auto=compress&cs=tinysrgb&w=900');
+  --img-dementia: url('https://images.pexels.com/photos/5637738/pexels-photo-5637738.jpeg?auto=compress&cs=tinysrgb&w=900');
+  --img-documents: url('https://images.pexels.com/photos/7363991/pexels-photo-7363991.jpeg?auto=compress&cs=tinysrgb&w=900');
+  --img-home: url('https://images.pexels.com/photos/7364192/pexels-photo-7364192.jpeg?auto=compress&cs=tinysrgb&w=900');
+  --img-scope-hero: url('https://images.pexels.com/photos/5637736/pexels-photo-5637736.jpeg?auto=compress&cs=tinysrgb&w=1600');
+  --img-contact-hero: url('https://images.pexels.com/photos/5637572/pexels-photo-5637572.jpeg?auto=compress&cs=tinysrgb&w=1600');
 }
 
 html {
