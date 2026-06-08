@@ -11,34 +11,18 @@
 </head>
 <body>
 
-  <!-- Top Notice Bar -->
   <div class="notice-bar" id="noticeBar">
-    <p class="notice-bar__text">
-      사이트 이용기간이 만료되어 관리자만 접속 가능합니다.
-    </p>
+    <p class="notice-bar__text">사이트 이용기간이 만료되어 관리자만 접속 가능합니다.</p>
     <div class="notice-bar__actions">
       <button class="notice-bar__close" type="button" aria-label="닫기" onclick="document.getElementById('noticeBar').remove();document.querySelector('.header').style.top='0'">닫기</button>
       <a href="#" class="notice-bar__pay">결제하기</a>
     </div>
   </div>
 
-  <!-- Header -->
   <header class="header">
     <div class="header__inner">
       <a href="index.html" class="header__logo">
-        <span class="header__logo-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="3" fill="#e91e63"/>
-            <ellipse cx="12" cy="7" rx="3" ry="4" fill="#f48fb1"/>
-            <ellipse cx="12" cy="17" rx="3" ry="4" fill="#f48fb1"/>
-            <ellipse cx="7" cy="12" rx="4" ry="3" fill="#f48fb1"/>
-            <ellipse cx="17" cy="12" rx="4" ry="3" fill="#f48fb1"/>
-            <ellipse cx="8.5" cy="8.5" rx="3" ry="3.5" fill="#f8bbd0" transform="rotate(-45 8.5 8.5)"/>
-            <ellipse cx="15.5" cy="8.5" rx="3" ry="3.5" fill="#f8bbd0" transform="rotate(45 15.5 8.5)"/>
-            <ellipse cx="8.5" cy="15.5" rx="3" ry="3.5" fill="#f8bbd0" transform="rotate(45 8.5 15.5)"/>
-            <ellipse cx="15.5" cy="15.5" rx="3" ry="3.5" fill="#f8bbd0" transform="rotate(-45 15.5 15.5)"/>
-          </svg>
-        </span>
+        <img src="assets/logo.svg" alt="">
         <span class="header__logo-text">카네이션간병협회</span>
       </a>
       <nav class="header__nav">
@@ -49,18 +33,16 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
   <section class="hero">
+    <div class="hero__bg"></div>
     <div class="hero__overlay"></div>
     <div class="hero__content">
       <h1 class="hero__title">
         당신의 건강과 안정을 위한<br>
         통합 돌봄 서비스를 만나다
       </h1>
-      <p class="hero__subtitle">
-        병원부터 가정까지, 저학년부터 노인까지. 통합 돌봄 서비스
-      </p>
-      <a href="#" class="hero__cta">📞 간병안내 문의하기</a>
+      <p class="hero__subtitle">병원부터 가정까지, 저학년부터 노인까지. 통합 돌봄 서비스</p>
+      <a href="contact.html" class="btn btn--primary">📞 간병안내 문의하기</a>
     </div>
     <div class="hero__features">
       <div class="hero__feature">
@@ -82,7 +64,6 @@
     </div>
   </section>
 
-  <!-- Introduction Section -->
   <section class="intro">
     <div class="intro__inner">
       <p class="intro__welcome">카네이션간병협회에 오신 것을 환영합니다.</p>
@@ -93,11 +74,10 @@
     </div>
   </section>
 
-  <!-- Service Grid Section -->
   <section class="services">
-    <div class="services__header">
-      <p class="services__subtitle">내 가족에게 돌봄 전문가의 손길을 전해보세요</p>
-      <h2 class="services__title">다양한 종류의 돌봄을 진행합니다</h2>
+    <div class="section-header">
+      <p class="section-header__eyebrow">내 가족에게 돌봄 전문가의 손길을 전해보세요</p>
+      <h2 class="section-header__title">다양한 종류의 돌봄을 진행합니다</h2>
     </div>
     <div class="services__grid">
       <article class="service-card service-card--1">
@@ -106,7 +86,7 @@
         <div class="service-card__content">
           <h3>병원방문간병</h3>
           <p>병원에서 환자를 세심하게 돌보는 전문 간병 서비스</p>
-          <a href="#" class="service-card__link">더 알아보기 &gt;</a>
+          <a href="care-scope.html" class="service-card__link">더 알아보기 &gt;</a>
         </div>
       </article>
       <article class="service-card service-card--2">
@@ -115,31 +95,30 @@
         <div class="service-card__content">
           <h3>치매·장애간병</h3>
           <p>치매·장애 환자를 위한 맞춤형 전문 돌봄 서비스</p>
-          <a href="#" class="service-card__link">더 알아보기 &gt;</a>
+          <a href="care-scope.html" class="service-card__link">더 알아보기 &gt;</a>
         </div>
       </article>
       <article class="service-card service-card--3">
-        <div class="service-card__bg" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80')"></div>
+        <div class="service-card__bg" style="background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80')"></div>
         <div class="service-card__overlay"></div>
         <div class="service-card__content">
           <h3>가족간병 서류대행</h3>
           <p>가족간병 관련 서류 작성 및 행정 절차 대행</p>
-          <a href="#" class="service-card__link">더 알아보기 &gt;</a>
+          <a href="care-scope.html" class="service-card__link">더 알아보기 &gt;</a>
         </div>
       </article>
       <article class="service-card service-card--4">
-        <div class="service-card__bg" style="background-image: url('https://images.unsplash.com/photo-1516307365426-bea4f5f2c96d?w=800&q=80')"></div>
+        <div class="service-card__bg" style="background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80')"></div>
         <div class="service-card__overlay"></div>
         <div class="service-card__content">
           <h3>가정방문간병</h3>
           <p>집에서 편안하게 받는 전문 가정 간병 서비스</p>
-          <a href="#" class="service-card__link">더 알아보기 &gt;</a>
+          <a href="care-scope.html" class="service-card__link">더 알아보기 &gt;</a>
         </div>
       </article>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <nav class="footer__nav">
       <a href="#">도움이 필요하신가요?</a>
@@ -156,7 +135,6 @@
     <p class="footer__copyright">Copyright © 2026 카네이션 간병협회 All rights reserved.</p>
   </footer>
 
-  <!-- Bottom Branding Bar -->
   <div class="branding-bar">
     <div class="branding-bar__left">
       <span class="branding-bar__logo">imweb</span>
