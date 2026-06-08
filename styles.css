@@ -28,6 +28,14 @@
   --font: 'Noto Sans KR', system-ui, sans-serif;
   --max: 1120px;
   --header-h: 72px;
+  /* Pexels free stock photos (RDNE – Asian caregiver series) */
+  --img-hero: url('https://images.pexels.com/photos/7551651/pexels-photo-7551651.jpeg?auto=compress&cs=tinysrgb&w=1200');
+  --img-hospital: url('https://images.pexels.com/photos/7551646/pexels-photo-7551646.jpeg?auto=compress&cs=tinysrgb&w=900');
+  --img-dementia: url('https://images.pexels.com/photos/7551664/pexels-photo-7551664.jpeg?auto=compress&cs=tinysrgb&w=900');
+  --img-documents: url('https://images.pexels.com/photos/7551647/pexels-photo-7551647.jpeg?auto=compress&cs=tinysrgb&w=900');
+  --img-home: url('https://images.pexels.com/photos/7551643/pexels-photo-7551643.jpeg?auto=compress&cs=tinysrgb&w=900');
+  --img-scope-hero: url('https://images.pexels.com/photos/7551639/pexels-photo-7551639.jpeg?auto=compress&cs=tinysrgb&w=1600');
+  --img-contact-hero: url('https://images.pexels.com/photos/7551640/pexels-photo-7551640.jpeg?auto=compress&cs=tinysrgb&w=1600');
 }
 
 html {
@@ -222,11 +230,11 @@ a {
 }
 
 .page-hero--scope::before {
-  background-image: url('assets/images/scope-hero.jpg');
+  background-image: var(--img-scope-hero);
 }
 
 .page-hero--contact::before {
-  background-image: url('assets/images/contact-hero.jpg');
+  background-image: var(--img-contact-hero);
 }
 
 .page-hero__inner {
